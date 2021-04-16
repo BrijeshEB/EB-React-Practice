@@ -4,8 +4,6 @@ export const transactionReducer = (state, action) => {
     
     switch (action.type) {
         case 'INSERT':
-            debugger
-
         list.push(action.payload)
             localStorage.setItem('Transactions', JSON.stringify(list))
             return { list, currentIndex: -1 }
